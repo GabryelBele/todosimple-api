@@ -44,7 +44,7 @@ public class TaskService {
         try {
             this.taskRepository.deleteById(id);
         } catch (Exception e) {
-            throw new RuntimeException("Não é possível excluir pois há entidades relacionadas!");
+            throw new RuntimeException("Não é possível excluir pois há entidades relacionadas.");
         }
     }
 }
