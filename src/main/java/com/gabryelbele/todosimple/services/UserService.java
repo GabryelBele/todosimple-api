@@ -34,9 +34,10 @@ public class UserService {
     public User update(User obj) {
        User newObj = findById(obj.getId());
        newObj.setPassword(obj.getPassword());
-
-       return this.userRepository.save(obj);
+    
+       return this.userRepository.save(newObj);
     }
+    
 
     public void delete(Long id) {
         findById(id);
