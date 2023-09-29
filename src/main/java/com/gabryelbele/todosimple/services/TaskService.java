@@ -16,8 +16,6 @@ public class TaskService {
     @Autowired
     private TaskRepository taskRepository;
 
-    // Se você deseja acessar métodos do UserService aqui, você deve injetá-lo
-    // corretamente.
     @Autowired
     private UserService userService;
 
