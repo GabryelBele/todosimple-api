@@ -34,7 +34,6 @@ public class UserController {
         User obj = this.userService.findById(id);
         return ResponseEntity.ok().body(obj);
     }
-
     @PostMapping
     @Validated(CreateUser.class)
     public ResponseEntity<User> create(@Valid @RequestBody User obj) {
